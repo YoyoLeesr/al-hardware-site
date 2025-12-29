@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AL Hardware Trading Sdb Bhd</title>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+  }
+
+  /* Sticky Shrinking Header */
+  header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+    font-size: 1.8rem;
+    z-index: 1000;
+    transition: all 0.4s ease;
+  }
+  header.scrolled {
+    line-height: 60px;
+    font-size: 1.4rem;
+    background-color: #111;
+  }
+  nav {
+    background: #333;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* Hero section */
+  .hero {
+    background-image: url('https://picsum.photos/1600/500?random=2');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Products grid */
+  .products {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  .product-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  .product-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  .product-card h3 {
+    margin-bottom: 10px;
+  }
+  .product-card p {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  .product-card button {
+    padding: 10px 15px;
+    background: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .product-card button:hover {
+    background: #0056b3;
+  }
+
+  /* Contact and Customization Section */
+  .contact, .customize {
+    background: white;
+    padding: 40px;
+    margin: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .contact h2, .customize h2 {
+    margin-bottom: 20px;
+  }
+  form {
+    display: grid;
+    gap: 15px;
+  }
+  input, textarea, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  button[type="submit"] {
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button[type="submit"]:hover {
+    background: #1e7e34;
+  }
+
+  /* Footer */
+  footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header id="mainHeader">
+  AL Hardware Trading Sdb Bhd
+</header>
+<nav>
+  <a href="#hero">Home</a>
+  <a href="#products">Products</a>
+  <a href="#customize">Customize</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero" id="hero">
+  Best Quality Hardware, Custom Solutions for Your Needs
+</div>
+
+<!-- Products Section -->
+<section class="products" id="products">
+
+  <!-- Existing category -->
+  <div class="product-card">
+    <img src="https://picsum.photos/250/160?random=3" alt="Hammer">
+    <h3>Steel Hammer</h3>
+    <p>Durable steel hammer for construction.</p>
+    <button>Buy Now</button>
+  </div>
+
+  <!-- More categories/products -->
+  <div class="product-card">
+    <img src="https://picsum.photos/250/160?random=4" alt="Screwdriver">
+    <h3>Screwdriver Set</h3>
+    <p>Complete set for all household needs.</p>
+    <button>Buy Now</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://picsum.photos/250/160?random=5" alt="Drill">
+    <h3>Electric Drill</h3>
+    <p>High power drill for industrial use.</p>
+    <button>Buy Now</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://picsum.photos/250/160?random=6" alt="Saw">
+    <h3>Hand Saw</h3>
+    <p>Precision hand saw for carpentry work.</p>
+    <button>Buy Now</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://picsum.photos/250/160?random=7" alt="Wrench">
+    <h3>Adjustable Wrench</h3>
+    <p>Strong grip wrench for plumbing and repair.</p>
+    <button>Buy Now</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://picsum.photos/250/160?random=8" alt="Nails">
+    <h3>Industrial Nails Pack</h3>
+    <p>Large quantity nails for construction projects.</p>
+    <button>Buy Now</button>
+  </div>
+
+</section>
+
+<!-- Customize Your Product Section -->
+<section class="customize" id="customize">
+  <h2>Customize Your Product</h2>
+  <form>
+    <label for="customName">Product Name/Category</label>
+    <input type="text" id="customName" placeholder="e.g., Steel Pipe, Drill Bit" required>
+
+    <label for="customImage">Upload Product Image</label>
+    <input type="file" id="customImage" accept="image/*" required>
+
+    <label for="customSpec">Product Specifications</label>
+    <textarea id="customSpec" rows="4" placeholder="Enter size, material, features..." required></textarea>
+
+    <label for="customPrice">Estimated Price</label>
+    <input type="number" id="customPrice" placeholder="Enter estimated price" required>
+
+    <label for="customCategory">Category</label>
+    <select id="customCategory">
+      <option>Tools</option>
+      <option>Construction Materials</option>
+      <option>Plumbing</option>
+      <option>Electrical</option>
+      <option>Others</option>
+    </select>
+
+    <button type="submit">Submit Custom Order</button>
+  </form>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="4" placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  &copy; 2024 AL Hardware Trading Sdb Bhd. All rights reserved.
+</footer>
+
+<script>
+  const header = document.getElementById('mainHeader');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
+
+</body>
+</html>
